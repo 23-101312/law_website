@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Header from '../components/header';
 import Hero from '../components/hero';
 import Smalltitle from '../components/smalltitle';
@@ -11,15 +13,83 @@ import Processstep from '../components/processstep';
 import Contactform from '../components/contactform';
 import Footer from '../components/footer';
 
+gsap.registerPlugin(ScrollTrigger);
+
 
 const Home = (props) => {
+  const section2Ref = useRef(null);
+  const statsRef = useRef(null);
+  const section4Ref = useRef(null);
+  const section5Ref = useRef(null);
+  const section6Ref = useRef(null);
+
+  useEffect(() => {
+    const sectionConfig = [
+      { ref: section2Ref, selector: '.section_2_content', x: -80 },
+      { ref: section4Ref, selector: '.section_4_content', x: 80 },
+      { ref: section5Ref, selector: '.section_5_content', x: -80 },
+      { ref: section6Ref, selector: '.sec6_inner', x: 80 },
+    ];
+
+    sectionConfig.forEach(({ ref: r, selector, x }) => {
+      if (!r.current) return;
+      const el = r.current.querySelector(selector) || r.current;
+      gsap.fromTo(
+        el,
+        { opacity: 0, y: 100, x, scale: 0.92 },
+        {
+          opacity: 1,
+          y: 0,
+          x: 0,
+          scale: 1,
+          duration: 2,
+          ease: 'power2.out',
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: r.current,
+            start: 'top 85%',
+            end: 'top 15%',
+            scrub: 2.5,
+          },
+        }
+      );
+    });
+
+    const statItems = statsRef.current?.querySelectorAll('.statnum');
+    if (statItems?.length) {
+      gsap.fromTo(
+        statItems,
+        { opacity: 0, y: 80, scale: 0.75, x: -30 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          x: 0,
+          duration: 2,
+          stagger: 0.25,
+          ease: 'power2.out',
+          immediateRender: false,
+          scrollTrigger: {
+            trigger: statsRef.current,
+            start: 'top 85%',
+            end: 'top 15%',
+            scrub: 2.5,
+          },
+        }
+      );
+    }
+
+    ScrollTrigger.refresh();
+    return () => ScrollTrigger.getAll().forEach((t) => t.kill());
+  }, []);
+
   return ( 
     <>
      <Header />
 
      <main>
       <Hero />
-      <section className='section_2'>
+      <section className='section_2' ref={section2Ref}>
         <div className='section_2_content'>
           <Smalltitle titlestyle="smalltitle1" smalltitletext="// About The Firm" />
 
@@ -38,7 +108,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className='stats_section'>
+      <section className='stats_section' ref={statsRef}>
         <div className='stats_section_content'>
           <Statnum value="95%" label="CLIENT SUCCESS RATE" />
           <Statnum value="1,200+" label="CASES RESOLVED" />
@@ -47,7 +117,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className='section_4'>
+      <section className='section_4' ref={section4Ref}>
         <div className='section_4_content'>
           <div className='sec4_title'>
             <div className='sec4_titleleft'>
@@ -68,7 +138,7 @@ const Home = (props) => {
           </div>
       </section>
 
-      <section className='section_5'>
+      <section className='section_5' ref={section5Ref}>
         <div className='section_5_content'>
           <div className='sec5_left'>
             <Smalltitle titlestyle="smalltitle1" smalltitletext="// Our Approach" />
@@ -85,7 +155,7 @@ const Home = (props) => {
         </div>
       </section>
 
-      <section className='section_6'>
+      <section className='section_6' ref={section6Ref}>
       <div className="sec6_inner">
         <div className="sec6_left">
            <Smalltitle titlestyle="smalltitle2" smalltitletext="// CONTACT US" />
