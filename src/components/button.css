@@ -12,6 +12,7 @@
   line-height: 20px; /* 153.846% */
   text-transform: uppercase;
   transition: all 0.3s ease;
+  border: none;
 }
 
   .btnstyle2 {
@@ -28,14 +29,40 @@
   line-height: 20px; /* 153.846% */
   text-transform: uppercase;
   transition: all 0.3s ease;
+  border: none;
   }
+
+    .btnstyle3 {
+      border-radius: 2px;
+  background: none;
+  display: flex;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  color: var(--white-text);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 153.846% */
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+ border: 1px solid var(--white-text);
+  }
+
 
 .btnstyle1:hover {
   background: var(--white-bg);
   color: var(--black-text); 
+  border: 1px solid var(--black-text);
 }
 
 .btnstyle2:hover {  
   background: var(--green-bg);
   color: var(--white-text);
+  /* border: 1px solid var(--white-bg); */
+}
+
+.btnstyle3:hover {  
+  color: var(--black-text);
+  border: 1px solid var(--black-text);
 }

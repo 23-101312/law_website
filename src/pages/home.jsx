@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
+import Hero from '../components/hero';
 
 
 const Home = (props) => {
@@ -8,9 +9,7 @@ const Home = (props) => {
      <Header />
 
      <main>
-      <section className='hero'>
-        
-      </section>
+      <Hero />
 
      </main>
 
