@@ -25,7 +25,18 @@ const Header = () => {
           </li>
         </ul>
 
-        <Button btnstyle="btnstyle1" btn=" CONSULTATIONS" />
+        <div className="nav_actions">
+          <button
+            id="mode_btn"
+            className="mode_btn"
+            aria-label="Toggle dark mode"
+            onClick={() => document.body.classList.toggle('mode')}
+          >
+            <span className="mode_icon mode_icon--moon">☽</span>
+            <span className="mode_icon mode_icon--sun">☀</span>
+          </button>
+          <Button btnstyle="btnstyle1" btn=" CONSULTATIONS" />
+        </div>
 
         <button
           className={`hamburger ${menuOpen ? 'hamburger--open' : ''}`}

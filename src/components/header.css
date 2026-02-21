@@ -65,6 +65,47 @@ ul,
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.nav_actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mode_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--primary-text);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.mode_btn:hover {
+  color: var(--green-text);
+}
+
+.mode_icon--sun {
+  display: none;
+}
+
+.mode_icon--moon {
+  display: block;
+}
+
+body.mode .mode_icon--sun {
+  display: block;
+}
+
+body.mode .mode_icon--moon {
+  display: none;
+}
+
 .nav_btn_mobile {
   display: none;
 }
@@ -78,11 +119,17 @@ ul,
     padding: 18px 1.5rem;
   }
 
+  .mode_btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
   .hamburger {
     display: flex;
   }
 
-  nav>.btnstyle1 {
+  .nav_actions .btnstyle1 {
     display: none;
   }
 
