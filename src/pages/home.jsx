@@ -1,10 +1,19 @@
 import React from 'react';
+import Header from '../components/header';
 
-const Home = () => {
+
+const Home = (props) => {
   return ( 
     <>
-    
-    
+     <Header />
+
+     <main>
+      <section className='hero'>
+        
+      </section>
+
+     </main>
+
     </>
    );
 }

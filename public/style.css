@@ -1,0 +1,36 @@
+:root {
+  /* --black-text: #1A1A1A;
+  --grey-text: #4A4A4A; */
+  --primary-text: #1A1A1A;
+  --secondary-text: #4A4A4A;
+  --bg-1: #FAFAF8;
+  --bg-2: #EBE9E6;
+
+  --white-bg: #FAFAF8;
+  --white-text: #FAFAF8;
+  --beige-text: #D4D0CB;
+  --black-text: #1A1A1A;
+  --green-bg: #6B7C5E;
+  --green-text: #6B7C5E;
+  --bg_img: url('../assets/bg light.png');
+}
+
+.mode {
+  --primary-text: #F5F3F0;
+  --secondary-text: #A0A0A0;
+  --bg-1: #111;
+  --bg-2: #1A1A1A;
+
+  --white-bg: #FAFAF8;
+  --white-text: #FAFAF8;
+  --beige-text: #D4D0CB;
+  --black-text: #1A1A1A;
+  --green-bg: #6B7C5E;
+  --green-text: #6B7C5E;
+  --bg_img: url('../assets/bg dark.png');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

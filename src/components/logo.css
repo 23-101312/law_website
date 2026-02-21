@@ -1,0 +1,12 @@
+.logo h1 {
+  color: var(--white-text);
+  font-family: "Playfair Display";
+  font-size: 20.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 156.863% */
+}
+
+.greentext {
+  color: var(--green-text);
+}

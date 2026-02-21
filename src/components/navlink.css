@@ -1,0 +1,27 @@
+.navstyle1 {
+  color: var(--primary-text);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 168.067% */
+text-decoration: underline;
+}
+
+.navstyle2 {
+  color: var(--primary-text);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 168.067% */
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.navstyle2:hover {
+  color: var(--green-text);
+  text-decoration: underline;
+}
+
+
