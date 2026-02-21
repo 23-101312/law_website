@@ -63,3 +63,22 @@ line-height: 29px; /* 189.542% */
   max-height: 200px;
 }
 
+.stats_section {
+  width: 100%;
+  background-color: var(--bg-2);
+  align-items: center;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;  
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.stats_section_content {
+  display: flex;
+  max-width: 1184px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+

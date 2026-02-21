@@ -4,6 +4,7 @@ import Hero from '../components/hero';
 import Smalltitle from '../components/smalltitle';
 import image1 from '../assets/image1.png';
 import './home.css';
+import Statnum from '../components/statnum';
 
 
 const Home = (props) => {
@@ -29,9 +30,16 @@ const Home = (props) => {
           <img src={image1} alt="" />
 
         </div>
-
         </div>
-        
+      </section>
+
+      <section className='stats_section'>
+        <div className='stats_section_content'>
+          <Statnum value="95%" label="CLIENT SUCCESS RATE" />
+          <Statnum value="1,200+" label="CASES RESOLVED" />
+          <Statnum value="50+" label="EXPERT ATTORNEYS" />
+          <Statnum value="15+" label="GLOBAL OFFICES" />
+        </div>
       </section>
       
 

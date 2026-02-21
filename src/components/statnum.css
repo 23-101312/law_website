@@ -1,0 +1,28 @@
+
+.statnum {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+
+.statnum_value {
+  color: var(--primary-text);
+font-family: "Playfair Display";
+font-size: 51px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; /* 117.647% */
+}
+
+.statnum_label {
+  color: var(--primary-text);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; /* 117.647% */
+opacity: 0.8;
+text-transform: uppercase;
+}
+
