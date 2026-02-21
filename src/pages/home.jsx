@@ -5,6 +5,8 @@ import Smalltitle from '../components/smalltitle';
 import image1 from '../assets/image1.png';
 import './home.css';
 import Statnum from '../components/statnum';
+import arrow from '../assets/arrow.svg';
+import Legallist from '../components/services';
 
 
 const Home = (props) => {
@@ -40,6 +42,27 @@ const Home = (props) => {
           <Statnum value="50+" label="EXPERT ATTORNEYS" />
           <Statnum value="15+" label="GLOBAL OFFICES" />
         </div>
+      </section>
+
+      <section className='section_4'>
+        <div className='section_4_content'>
+          <div className='sec4_title'>
+            <div className='sec4_titleleft'>
+              <Smalltitle smalltitletext="// Our Expertise" />
+              <h2 className='sec4title'>Comprehensive Legal Services</h2>
+            </div>
+            <div className='sec4_titleright'>
+              <p>View All Practice Areas</p>
+              <img src={arrow} alt="" />
+            </div>
+
+          </div>
+          <Legallist legalnum="01." legaltitle="Corporate Law" legaldesc="Comprehensive guidance for mergers, acquisitions, and corporate governance. We help businesses navigate the complex regulatory landscape with precision. " />
+          <Legallist legalnum="02." legaltitle="Intellectual Property" legaldesc="Protection and enforcement of patents, trademarks, copyrights, and trade secrets. We help businesses safeguard their intellectual assets. " />
+          <Legallist legalnum="03." legaltitle="Litigation & Defense" legaldesc="Strategic representation in complex civil and criminal litigation. We provide aggressive advocacy for our clients' interests. " />
+
+        <Legallist legalnum="04." legaltitle="Real Estate Law" legaldesc="Guidance on property transactions, zoning issues, and regulatory compliance. We help businesses navigate the complexities of real estate law. " />
+          </div>
       </section>
       
 

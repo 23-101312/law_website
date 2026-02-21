@@ -1,0 +1,71 @@
+.legaldiv {
+display: flex;
+width: 100%;
+max-width: 1232px;
+height: 187px;
+padding: 50px 15px;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+border-top: 1px solid #E5E7EB;
+border-bottom: 1px solid #E5E7EB;
+transition: all 0.3s ease;
+}
+
+.legalnum {
+  color: var(--green-text);
+  font-family: "Playfair Display";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 183.007% */
+  transition: all 0.3s ease;
+
+}
+
+.legaltitle {
+  color: var(--primary-text);
+font-family: "Playfair Display";
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 141.176% */
+transition: all 0.3s ease;
+
+}
+
+.legaldesc {
+  color: var(--secondary-text);
+  font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 191.176% */
+max-width: 400px;
+transition: all 0.3s ease;
+
+}
+
+.arrow {
+  display: flex;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid var(--green-bg);
+  transition: all 0.3s ease;
+}
+
+.legaldiv:hover .arrow {
+  opacity: 1;
+}
+
+.legaldiv:hover {
+  background-color: rgba(244, 240, 236, 0.868);
+}
+
+.legaldiv:hover .legaltitle {
+  transform: translateX(6px);
+}

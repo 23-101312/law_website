@@ -74,7 +74,7 @@ line-height: 96px; /* 117.647% */
 }
 
 .hero_description {
-  color: var(--beige-text);
+  color: var(--secondary-text);
 font-family: Inter;
 font-size: 17px;
 font-style: normal;
