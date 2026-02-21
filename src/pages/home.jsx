@@ -9,6 +9,7 @@ import arrow from '../assets/arrow.svg';
 import Legallist from '../components/services';
 import Processstep from '../components/processstep';
 import Contactform from '../components/contactform';
+import Footer from '../components/footer';
 
 
 const Home = (props) => {
@@ -137,6 +138,8 @@ const Home = (props) => {
       
 
      </main>
+
+     <Footer />
 
     </>
    );

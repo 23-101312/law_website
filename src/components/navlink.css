@@ -22,9 +22,22 @@ text-transform: uppercase;
 transition: all 0.3s ease;
 }
 
-.navstyle2:hover {
+.navstyle3 {
+  color: var(--beige-text);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 168.067% */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.navstyle2:hover, .navstyle3:hover {
   color: var(--green-text);
   text-decoration: underline;
+  opacity: 1;
 }
 
 

@@ -55,8 +55,7 @@ line-height: 16px; /* 156.863% */
   background: var(--white-bg);
 }
 
-.form_input:focus,
-.form_textarea:focus {
+.form_input:focus, .form_textarea:focus {
   border-color:var(--white-bg);
 }
 
