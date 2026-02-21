@@ -10,10 +10,17 @@ text-transform: uppercase;
 
 .smalltitle2 {
   color: var(--white-text);
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 168.067% */
-text-transform: uppercase;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 168.067% */
+  text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+  .smalltitle1,
+  .smalltitle2 {
+    font-size: 11px;
+  }
 }

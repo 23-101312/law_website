@@ -49,7 +49,7 @@ const Contactform = () => {
 
       <button className="form_btn" type="submit">
         <span>Request Consultation</span>
-        <span className="form_icon">→</span>
+        <span className="form_icon">&rarr;</span>
       </button>
     </form>
   );

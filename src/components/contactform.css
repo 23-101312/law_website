@@ -4,12 +4,17 @@
   padding: 34px 34px 28px;
   background: transparent;
   max-width: 560px;
+  box-sizing: border-box;
 }
 
 .form_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px 22px;
+}
+
+.form_field {
+  min-width: 0;
 }
 
 .form_full {
@@ -19,17 +24,17 @@
 .form_label {
   margin-bottom: 8px;
   color: var(--white-text);
-font-family: Inter;
-font-size: 10.2px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; /* 156.863% */
+  font-family: Inter;
+  font-size: 10.2px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;/* 156.863% */
 }
 
 .form_input, .form_select, .form_textarea {
   width: 100%;
   box-sizing: border-box;
-  background:var(--white-bg);
+  background: var(--white-bg);
   border: 1px solid var(--white-bg);
   color: var(--black-text);
   padding: 12px 14px;
@@ -55,18 +60,18 @@ line-height: 16px; /* 156.863% */
   background: var(--white-bg);
 }
 
-.form_input:focus, .form_textarea:focus {
-  border-color:var(--white-bg);
+.form_input:focus,.form_textarea:focus {
+  border-color: var(--white-bg);
 }
 
 .form_note {
   margin: 18px 0 22px 0;
   color: var(--white-text);
-font-family: Inter;
-font-size: 11px;
-font-style: normal;
-font-weight: 400;
-line-height: 19px; /* 186.275% */
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px; /* 186.275% */
 }
 
 .form_btn {
@@ -91,4 +96,80 @@ line-height: 19px; /* 186.275% */
 .form_icon {
   font-size: 16px;
   line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .form_box {
+    max-width: 100%;
+    padding: 28px 24px 24px;
+  }
+
+  .form_grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form_box {
+    padding: 30px 26px 25px;
+  }
+
+  .form_grid {
+    gap: 18px;
+  }
+
+  .form_note {
+    margin: 19px 0 22px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .form_box {
+    padding: 32px 28px 26px;
+  }
+
+  .form_grid {
+    gap: 20px;
+  }
+
+  .form_note {
+    margin: 20px 0 24px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .form_box {
+    max-width: 100%;
+    padding: 22px 16px 20px;
+  }
+
+  .form_input,
+  .form_select,
+  .form_textarea {
+    padding: 11px 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form_box {
+    padding: 18px 12px 16px;
+  }
+
+  .form_input,
+  .form_select,
+  .form_textarea {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .form_note {
+    font-size: 10px;
+    margin: 14px 0 18px 0;
+  }
+
+  .form_btn {
+    padding: 12px 14px;
+    min-height: 48px;
+  }
 }

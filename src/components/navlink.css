@@ -34,10 +34,25 @@ transition: all 0.3s ease;
   opacity: 0.6;
 }
 
-.navstyle2:hover, .navstyle3:hover {
+.navstyle2:hover,
+.navstyle3:hover {
   color: var(--green-text);
   text-decoration: underline;
   opacity: 1;
 }
 
+@media (max-width: 900px) {
+  .navstyle1,
+  .navstyle2,
+  .navstyle3 {
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 375px) {
+  .navstyle1,
+  .navstyle2,
+  .navstyle3 {
+    font-size: 13px;
+  }
+}

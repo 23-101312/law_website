@@ -4,7 +4,7 @@
   gap: 28px;
   position: relative;
   flex: 1 1 340px;
-  max-width: 360px; 
+  max-width: 360px;
 }
 
 .processstep::before {
@@ -23,7 +23,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 164.706% */
+  line-height: 28px;/* 164.706% */
 }
 
 .processstep_content {
@@ -32,19 +32,83 @@
 
 .processstep_title {
   margin-bottom: 1rem;
- font-family: "Playfair Display";
+  font-family: "Playfair Display";
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 156.863% */
+  line-height: 32px;
+  /* 156.863% */
   color: var(--primary-text);
 }
 
 .processstep_text {
   font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 191.176% */
-  color:var(--secondary-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 191.176% */
+  color: var(--secondary-text);
+}
+
+@media (max-width: 768px) {
+  .processstep {
+    flex: 1 1 100%;
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .processstep_content {
+    max-width: 100%;
+  }
+
+  .processstep_title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .processstep_text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .processstep {
+    gap: 16px;
+  }
+
+  .processstep_number {
+    font-size: 18px;
+  }
+
+  .processstep_title {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0.75rem;
+  }
+
+  .processstep_text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .processstep::before {
+    height: calc(100% - 30px);
+    top: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .processstep {
+    gap: 14px;
+  }
+
+  .processstep_number {
+    font-size: 16px;
+  }
+
+  .processstep_title {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

@@ -1,15 +1,15 @@
 .legaldiv {
-display: flex;
-width: 100%;
-max-width: 1232px;
-height: 187px;
-padding: 50px 15px;
-justify-content: space-between;
-align-items: center;
-box-sizing: border-box;
-border-top: 1px solid #E5E7EB;
-border-bottom: 1px solid #E5E7EB;
-transition: all 0.3s ease;
+  display: flex;
+  width: 100%;
+  max-width: 1232px;
+  height: 187px;
+  padding: 50px 15px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  transition: all 0.3s ease;
 }
 
 .legalnum {
@@ -18,31 +18,34 @@ transition: all 0.3s ease;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 183.007% */
+  line-height: 28px;
+  /* 183.007% */
   transition: all 0.3s ease;
 
 }
 
 .legaltitle {
   color: var(--primary-text);
-font-family: "Playfair Display";
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px; /* 141.176% */
-transition: all 0.3s ease;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  /* 141.176% */
+  transition: all 0.3s ease;
 
 }
 
 .legaldesc {
   color: var(--secondary-text);
   font-family: Inter;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 191.176% */
-max-width: 400px;
-transition: all 0.3s ease;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 191.176% */
+  max-width: 400px;
+  transition: all 0.3s ease;
 
 }
 
@@ -68,4 +71,92 @@ transition: all 0.3s ease;
 
 .legaldiv:hover .legaltitle {
   transform: translateX(6px);
+}
+
+@media (max-width: 1000px) {
+  .legaldiv {
+    padding: 40px 18px;
+    gap: 10px;
+  }
+
+  .legaltitle {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 850px) {
+  .legaldiv {
+    padding: 36px 20px;
+    gap: 12px;
+  }
+
+  .legaltitle {
+    font-size: 26px;
+  }
+
+  .legaldesc {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .legaldiv {
+    height: auto;
+    padding: 28px 15px;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .legaltitle {
+    font-size: 24px;
+  }
+
+  .legaldesc {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .arrow {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .legaldiv {
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 12px;
+    align-items: flex-start;
+  }
+
+  .legaltitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .legalnum {
+    font-size: 14px;
+  }
+
+  .legaldesc {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  .legaldiv {
+    padding: 20px 10px;
+    gap: 6px;
+  }
+
+  .legaltitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .legalnum {
+    font-size: 13px;
+  }
 }

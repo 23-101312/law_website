@@ -52,17 +52,27 @@
 
 .btnstyle1:hover {
   background: var(--white-bg);
-  color: var(--black-text); 
-  border: 1px solid var(--black-text);
-}
-
-.btnstyle2:hover {  
-  background: var(--green-bg);
-  color: var(--white-text);
-  /* border: 1px solid var(--white-bg); */
-}
-
-.btnstyle3:hover {  
   color: var(--black-text);
   border: 1px solid var(--black-text);
+}
+
+.btnstyle2:hover {
+  background: var(--green-bg);
+  color: var(--white-text);
+}
+
+.btnstyle3:hover {
+  color: var(--black-text);
+  border: 1px solid var(--black-text);
+}
+
+@media (max-width: 480px) {
+  .btnstyle1,
+  .btnstyle2,
+  .btnstyle3 {
+    padding: 12px 20px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+  }
 }

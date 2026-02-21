@@ -44,15 +44,15 @@
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px; /* 168.067% */
+  line-height: 20px;/* 168.067% */
 }
 
 .hero_label::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;    
-  width: 55px; 
+  bottom: -4px;
+  width: 55px;
   height: 1px;
   background: var(--green-text);
 }
@@ -60,10 +60,10 @@
 .hero_content h1 {
   font-size: 6rem;
   color: var(--white-text);
-font-family: "Playfair Display";
-font-style: normal;
-font-weight: 500;
-line-height: 96px; /* 117.647% */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 96px;/* 117.647% */
 }
 
 .hero_highlight {
@@ -75,11 +75,11 @@ line-height: 96px; /* 117.647% */
 
 .hero_description {
   color: var(--secondary-text);
-font-family: Inter;
-font-size: 17px;
-font-style: normal;
-font-weight: 300;
-line-height: 28px; /* 164.706% */
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 164.706% */
 }
 
 .hero_buttons {
@@ -95,7 +95,7 @@ line-height: 28px; /* 164.706% */
 }
 
 .herostat {
-  padding-right: 32px; 
+  padding-right: 32px;
   position: relative;
 }
 
@@ -105,8 +105,8 @@ line-height: 28px; /* 164.706% */
   right: 0;
   top: 0;
   width: 1px;
-  height: 88px; 
-  background:var(--beige-text);
+  height: 88px;
+  background: var(--beige-text);
 }
 
 .herostat_value {
@@ -115,7 +115,8 @@ line-height: 28px; /* 164.706% */
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
-  line-height: 48px; /* 117.647% */
+  line-height: 48px;
+  /* 117.647% */
   text-transform: uppercase;
   font-size: 40px;
   line-height: 1;
@@ -123,11 +124,189 @@ line-height: 28px; /* 164.706% */
 }
 
 .herostat_label {
-    text-align: right;
+  text-align: right;
   margin-top: 12px;
   font-family: Inter;
   font-size: 18px;
   line-height: 1;
-  color: var(--beige-text); 
+  color: var(--beige-text);
   opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 0 3rem;
+  }
+
+  .hero_content h1 {
+    font-size: 4.5rem;
+    line-height: 72px;
+  }
+
+  .herostat_value {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    padding: 0 2.75rem;
+  }
+
+  .hero_content {
+    gap: 2.25rem;
+  }
+
+  .hero_left {
+    gap: 1.1rem;
+  }
+
+  .hero_right {
+    gap: 2.25rem;
+  }
+
+  .hero_buttons {
+    gap: 1.1rem;
+    margin-top: 1.75rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    padding: 0 2.5rem;
+  }
+
+  .hero_content {
+    gap: 2.5rem;
+  }
+
+  .hero_content h1 {
+    font-size: 4rem;
+    line-height: 64px;
+  }
+
+  .hero_left {
+    gap: 1.25rem;
+  }
+
+  .hero_right {
+    gap: 2.5rem;
+  }
+
+  .hero_buttons {
+    gap: 1.25rem;
+    margin-top: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 2rem;
+    min-height: 100svh;
+  }
+
+  .hero_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero_right {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .herostat {
+    padding-right: 24px;
+  }
+
+  .herostat::after {
+    height: 64px;
+  }
+
+  .hero_content h1 {
+    font-size: 3.5rem;
+    line-height: 56px;
+  }
+
+  .hero_description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 0 1.25rem;
+  }
+
+  .hero_content {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero_content h1 {
+    font-size: 2.6rem;
+    line-height: 42px;
+  }
+
+  .hero_buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .hero_right {
+    gap: 24px;
+  }
+
+  .herostat_value {
+    font-size: 26px;
+  }
+
+  .herostat_label {
+    font-size: 12px;
+  }
+
+  .hero_description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    padding: 0 1rem;
+  }
+
+  .hero_content h1 {
+    font-size: 2.1rem;
+    line-height: 36px;
+  }
+
+  .herostat_value {
+    font-size: 22px;
+  }
+
+  .herostat_label {
+    font-size: 11px;
+  }
+
+  .herostat::after {
+    height: 56px;
+  }
+
+  .herostat {
+    padding-right: 16px;
+  }
+
+  .hero_right {
+    gap: 20px;
+  }
+
+  .hero_buttons {
+    gap: 0.5rem;
+  }
 }
