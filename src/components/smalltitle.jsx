@@ -4,7 +4,7 @@ import './smalltitle.css';
 const Smalltitle = (props) => {
   return (
 
-    <h2 className='smalltitle'>{props.smalltitletext}</h2>
+    <h2 className={props.titlestyle}>{props.smalltitletext}</h2>
     );
 }
  

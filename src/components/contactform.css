@@ -1,0 +1,95 @@
+.form_box {
+  width: 100%;
+  border: 1px solid rgba(245, 240, 216, 0.35);
+  padding: 34px 34px 28px;
+  background: transparent;
+  max-width: 560px;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 22px;
+}
+
+.form_full {
+  grid-column: 1 / -1;
+}
+
+.form_label {
+  margin-bottom: 8px;
+  color: var(--white-text);
+font-family: Inter;
+font-size: 10.2px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 156.863% */
+}
+
+.form_input, .form_select, .form_textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background:var(--white-bg);
+  border: 1px solid var(--white-bg);
+  color: var(--black-text);
+  padding: 12px 14px;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  outline: none;
+}
+
+.form_select {
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--white-bg);
+  color: var(--white-text);
+  padding: 12px 14px;
+}
+
+.form_textarea {
+  min-height: 132px;
+  resize: none;
+  background: var(--white-bg);
+}
+
+.form_input:focus,
+.form_textarea:focus {
+  border-color:var(--white-bg);
+}
+
+.form_note {
+  margin: 18px 0 22px 0;
+  color: var(--white-text);
+font-family: Inter;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 186.275% */
+}
+
+.form_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--white-bg);
+  color: var(--black-text);
+  padding: 14px 16px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 168.067% */
+  border: none;
+}
+
+.form_icon {
+  font-size: 16px;
+  line-height: 1;
+}

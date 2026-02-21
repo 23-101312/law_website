@@ -8,6 +8,7 @@ import Statnum from '../components/statnum';
 import arrow from '../assets/arrow.svg';
 import Legallist from '../components/services';
 import Processstep from '../components/processstep';
+import Contactform from '../components/contactform';
 
 
 const Home = (props) => {
@@ -19,7 +20,7 @@ const Home = (props) => {
       <Hero />
       <section className='section_2'>
         <div className='section_2_content'>
-          <Smalltitle smalltitletext="// About The Firm" />
+          <Smalltitle titlestyle="smalltitle1" smalltitletext="// About The Firm" />
 
         <div className='sec2_right'>
           <h2 className='sec2_title'>Since our inception in 2008, Harrington & Associates has redefined legal service by combining <span className='sec2_greentext'>strategic foresight</span> meticulous analysis, and an unwavering commitment to meaningful results.</h2>
@@ -49,7 +50,7 @@ const Home = (props) => {
         <div className='section_4_content'>
           <div className='sec4_title'>
             <div className='sec4_titleleft'>
-              <Smalltitle smalltitletext="// Our Expertise" />
+              <Smalltitle titlestyle="smalltitle1" smalltitletext="// Our Expertise" />
               <h2 className='sec4title'>Comprehensive Legal Services</h2>
             </div>
             <div className='sec4_titleright'>
@@ -69,7 +70,7 @@ const Home = (props) => {
       <section className='section_5'>
         <div className='section_5_content'>
           <div className='sec5_left'>
-            <Smalltitle smalltitletext="// Our Approach" />
+            <Smalltitle titlestyle="smalltitle1" smalltitletext="// Our Approach" />
             <h2 className='sec5_title'>A Methodical Path to Resolution </h2>
             <p>We believe that the best legal outcomes are the result of careful planning and strategic foresight. Our four-step process ensures nothing is overlooked. </p>
           </div>
@@ -81,6 +82,57 @@ const Home = (props) => {
             <Processstep processnum="04" processtitle="Continuous Support" processdesc="Beyond the immediate resolution, we provide ongoing advisory to ensure  success and compliance." />
           </div>
         </div>
+      </section>
+
+      <section className='section_6'>
+      <div className="sec6_inner">
+        <div className="sec6_left">
+           <Smalltitle titlestyle="smalltitle2" smalltitletext="// CONTACT US" />
+          <h2 className="consult_title">
+            Ready to Secure <br />
+            <span className="consult_titleitalic">Your Future?</span>
+          </h2>
+
+          <p className="consult_desc">
+            Schedule a confidential consultation with our senior partners. We
+            review every inquiry personally and respond within 24 hours.
+          </p>
+
+          <div className="consult_info">
+            <div className="consult_inforow">
+              <span className="consult_infoline" />
+              <div className="consult_infotext">
+                <div className="consult_infolabel">New York Office</div>
+                <div className="consult_infovalue">
+                  123 Legal Avenue, Suite 400, NY 10001
+                </div>
+              </div>
+            </div>
+
+            <div className="consult_inforow">
+              <span className="consult_infoline" />
+              <div className="consult_infotext">
+                <div className="consult_infolabel">Direct Line</div>
+                <div className="consult_infovalue">+1 (555) 123-4567</div>
+              </div>
+            </div>
+
+            <div className="consult_inforow">
+              <span className="consult_infoline" />
+              <div className="consult_infotext">
+                <div className="consult_infolabel">Email</div>
+                <div className="consult_infovalue">hello@harrington.law</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='sec6_right'>
+          <Contactform />
+        </div>
+
+
+      </div>
       </section>
       
 
