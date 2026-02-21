@@ -1,10 +1,13 @@
 header {
-  background: rgba(0, 0, 0, 0.00);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000;
+  right: 0;
+  z-index: 100;
+  background-color: transparent;
+  padding: 0 3rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 24px 0;
   box-sizing: border-box;
 }

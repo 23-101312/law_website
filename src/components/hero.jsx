@@ -28,12 +28,12 @@ const Hero = (props) => {
         <div className='hero_right'>
             <div className="herostat">
               <div className="herostat_value">95%</div>
-              <div className="herostat_label">Client Success Rate</div>
+              <div className="herostat_label">CLIENT SUCCESS RATE</div>
             </div>
 
             <div className="herostat">
               <div className="herostat_value">1,200+</div>
-              <div className="herostat_label">Cases Resolved</div>
+              <div className="herostat_label">CASES RESOLVED</div>
             </div>
           </div>
         </div>

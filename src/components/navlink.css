@@ -1,21 +1,24 @@
 .navstyle1 {
   color: var(--primary-text);
 font-family: Inter;
-font-size: 12px;
+font-size: 13px;
 font-style: normal;
 font-weight: 500;
 line-height: 20px; /* 168.067% */
 text-decoration: underline;
+text-transform: uppercase;
+transition: all 0.3s ease;
 }
 
 .navstyle2 {
   color: var(--primary-text);
 font-family: Inter;
-font-size: 12px;
+font-size: 13px;
 font-style: normal;
 font-weight: 500;
 line-height: 20px; /* 168.067% */
 text-decoration: none;
+text-transform: uppercase;
 transition: all 0.3s ease;
 }
 
