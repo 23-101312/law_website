@@ -7,6 +7,7 @@ import './home.css';
 import Statnum from '../components/statnum';
 import arrow from '../assets/arrow.svg';
 import Legallist from '../components/services';
+import Processstep from '../components/processstep';
 
 
 const Home = (props) => {
@@ -63,6 +64,23 @@ const Home = (props) => {
 
         <Legallist legalnum="04." legaltitle="Real Estate Law" legaldesc="Guidance on property transactions, zoning issues, and regulatory compliance. We help businesses navigate the complexities of real estate law. " />
           </div>
+      </section>
+
+      <section className='section_5'>
+        <div className='section_5_content'>
+          <div className='sec5_left'>
+            <Smalltitle smalltitletext="// Our Approach" />
+            <h2 className='sec5_title'>A Methodical Path to Resolution </h2>
+            <p>We believe that the best legal outcomes are the result of careful planning and strategic foresight. Our four-step process ensures nothing is overlooked. </p>
+          </div>
+
+          <div className='sec5_right'>
+            <Processstep processnum="01" processtitle="Initial Consultation" processdesc="We begin with a confidential discussion to understand your unique situation, objectives, and challenges." />
+            <Processstep processnum="02" processtitle="Strategic Analysis" processdesc="Our team conducts a thorough review of the legal landscape, identifying risks and opportunities tailored to your case." />
+            <Processstep processnum="03" processtitle="Precise Execution" processdesc="We implement a custom legal strategy with rigorous attention to detail, keeping you informed at every stage." />
+            <Processstep processnum="04" processtitle="Continuous Support" processdesc="Beyond the immediate resolution, we provide ongoing advisory to ensure  success and compliance." />
+          </div>
+        </div>
       </section>
       
 

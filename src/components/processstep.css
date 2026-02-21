@@ -1,0 +1,50 @@
+.processstep {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  position: relative;
+  flex: 1 1 340px;
+  max-width: 360px; 
+}
+
+.processstep::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 32px;
+  width: 1px;
+  height: calc(100% - 35px);
+  background: var(--primary-text);
+}
+
+.processstep_number {
+  color: var(--green-text);
+  font-family: "Playfair Display";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 164.706% */
+}
+
+.processstep_content {
+  max-width: 320px;
+}
+
+.processstep_title {
+  margin-bottom: 1rem;
+ font-family: "Playfair Display";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 156.863% */
+  color: var(--primary-text);
+}
+
+.processstep_text {
+  font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 191.176% */
+  color:var(--secondary-text);
+}
