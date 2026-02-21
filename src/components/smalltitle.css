@@ -1,0 +1,9 @@
+.smalltitle {
+  color: var(--green-text);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 168.067% */
+text-transform: uppercase;
+}
